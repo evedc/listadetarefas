@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!--Font-Awsesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -17,7 +17,7 @@
 <body>
     <div class="todo-container">
         <header>
-            <h1>Lista de Taredas</h1>
+            <h1>Lista de Tarefas</h1>
         </header>
 
         <form id="todo-form">
@@ -29,7 +29,8 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -39,6 +40,7 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
+
         <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
@@ -59,7 +61,7 @@
             </div>
         </div>
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estou fazendo alguma coisa...</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
